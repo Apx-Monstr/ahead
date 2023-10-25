@@ -1,10 +1,8 @@
-import fonts from "@/app/fonts";
-
-const BeatsText = () =>{
+const BeBest = () =>{
     return (
-        <div className=" p-16 flex gap-12 text-2xl">
-            <div className={"text-4xl flex-1 " + (fonts.outfitSemi.className)}>
-                EQ beats IQ
+        <div className=" p-16 flex gap-12 my-32 text-2xl">
+            <div className={"text-4xl flex-1 font-semibold"}>
+                Be best you with EQ
             </div>
             <div className=" flex-1">
                 People with high emotional intelligence (EQ) live more fulfilled lives. They tend to be happier and have healthier relationships
@@ -16,4 +14,4 @@ const BeatsText = () =>{
     )
 }
 
-export default BeatsText;
+export default BeBest;

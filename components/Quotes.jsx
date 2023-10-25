@@ -6,7 +6,7 @@ const Quotes = () =>{
             <div className="text-6xl font-semibold px-16 pb-16">
                 Does this sound familiar...
             </div>
-            <div className="flex bg-red-500 overflow-hidden gap-12 items-center" >
+            <div className="flex bg-red-500 overflow-hidden gap-12 items-center py-12" >
                 <Card/>
                 <Card/>
                 <Card/>

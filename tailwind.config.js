@@ -14,7 +14,13 @@ module.exports = {
       },
       colors:{
         primary:"#6341EF",
-        lightPurple:"#EEEBFE"
+        lightPurple:"#EEEBFE",
+        lightBlue:"#D8F2FF",
+        skyBlue:"#40c2fc",
+        Green:"#58c896",
+        Yellow:"#fdb338",
+        lightCream:"#FEF7F1",
+        Brown:"#D58E4C"
       }
     },
   },
