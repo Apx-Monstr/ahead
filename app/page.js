@@ -15,14 +15,14 @@ export default function Home() {
   return (
     <main className="max-w-screen-2xl mx-auto">
       <Header/>
-      <div className='flex flex-col gap-12'>
+      <div className='flex flex-col gap-16'>
         <Hero/>
         <BeatsText/>
         <Quotes/>
-        <BeBest/>
-        <Rate/>
         <Meet/>
         <SelfImprove/>
+        <BeBest/>
+        <Rate/>
         <PrivacyMsg/>
         <Work/>
         <Vacancy/>

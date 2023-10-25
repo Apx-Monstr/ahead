@@ -2,7 +2,7 @@ import sunflower from "/public/sunflower.svg"
 const Rate = ()=>{
     return (
         <div className="bg-white p-12">
-            <div className="p-16 bg-lightBlue rounded-2xl flex flex-col items-center text-2xl gap-12">
+            <div className="p-16 bg-lightBlue rounded-2xl flex flex-col items-center text-2xl gap-12 py-24">
                 <div className="text-center">
                     Let your friends, family, and co-workers (anonymously) rate your social skills.
                     <p className="text-6xl font-semibold pt-4">

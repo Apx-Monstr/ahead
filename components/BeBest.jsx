@@ -5,10 +5,10 @@ const BeBest = () =>{
                 Be best you with EQ
             </div>
             <div className=" flex-1">
-                People with high emotional intelligence (EQ) live more fulfilled lives. They tend to be happier and have healthier relationships
+            Not having your own emotions under control might be holding you back.
             </div>
             <div className=" flex-1">
-                They are more successful in their pursuits and making for inspiring leaders. According to science, they earn $29k a year
+            Additionally, not understanding those of others stops you from being parent, friend you can be.
             </div>
         </div>
     )

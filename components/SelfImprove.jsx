@@ -15,7 +15,7 @@ const SelfImprove = ()=>{
                             <div className="h-4 w-4 rounded-full bg-primary animate-none"></div>
                         </div>
                         <p className="text-4xl font-semibold pb-4">
-                            Hello
+                            It`s not as easy as 1-2-3.
                         </p>
                         The journey of change may be long, but our sessions are quick. We get
                         to the point and tell you what you want to know (and nothing else).
@@ -24,25 +24,23 @@ const SelfImprove = ()=>{
                         <div className="absolute h-4 w-4 bg-primary rounded-full flex items-center justify-center top-3 -left-2">
                         </div>
                         <p className="text-4xl font-semibold pb-4">
-                            Hello
+                            Old habits are hard to break.
                         </p>
-                        The journey of change may be long, but our sessions are quick. We get
-                        to the point and tell you what you want to know (and nothing else).
+                        And bad behaviors die hard. Fortunately, we give you great, science-backed techniques to use.
                     </div>
                     <div className=" px-12 text-2xl relative font-normal pb-12">
                         <div className="absolute h-4 w-4 bg-primary rounded-full flex items-center justify-center top-3 -left-2">
                         </div>
                         <p className="text-4xl font-semibold pb-4">
-                            Hello
+                        You and your motivation don`t have a long-term relationship.
                         </p>
-                        The journey of change may be long, but our sessions are quick. We get
-                        to the point and tell you what you want to know (and nothing else).
+                        Luckily, we can proactively prepare you for the marathon, not just the race. Effective, memorable exerciseswill help you stick to your goals..
                     </div>
                     <div className=" px-12 text-2xl relative font-normal pb-12">
                         <div className="absolute h-4 w-4 bg-primary rounded-full flex items-center justify-center top-3 -left-2">
                         </div>
                         <p className="text-4xl font-semibold pb-4">
-                            Hello
+                            Books just don`t offer practical solution
                         </p>
                         The journey of change may be long, but our sessions are quick. We get
                         to the point and tell you what you want to know (and nothing else).

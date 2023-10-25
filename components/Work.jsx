@@ -1,6 +1,20 @@
 import fonts from "@/app/fonts";
 import ScrollCards from "./root/ScrollCards";
 import HeroGhost from "/public/ghostHero.png";
+const cards = [
+    {
+        title:"Power through, even when the going gets tough",
+        desc:"We help you spot and work around whatever stands in the way, be it bad habits, fears, etc"
+    },
+    {
+        title:"Learn more about who you are and where you want to go",
+        desc:"We ask the right questions to help you better understand why you do things the way you do."
+    },
+    {
+        title:"Play and grow together with others on the same journey",
+        desc:"Ahead feels like a game, not like a chore. See yourself grow every day towards achieving your goals!"
+    },
+]
 const Work = () =>{
     return (
         <div className=" p-12">
@@ -33,14 +47,11 @@ const Work = () =>{
                     </div>
                     <div className="flex-1  max-h-full overflow-auto relative">
                         <div className="max-h-[800px] flex flex-col items-center gap-8 overflow-auto pb-4">
-                            <ScrollCards/>
-                            <ScrollCards/>
-                            <ScrollCards/>
-                            <ScrollCards/>
-                            <ScrollCards/>
-                            <ScrollCards/>
-                            <ScrollCards/>
-                            <ScrollCards/>
+                            {
+                                cards.map((card, index)=>(
+                                    <ScrollCards key = {index} title={card.title} desc = {card.desc} />
+                                ))
+                            }
                         </div>
                     </div>
                 </div>

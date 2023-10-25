@@ -1,14 +1,19 @@
-const Roles =()=>{
+import MainButton from "./MainButton";
+
+const Roles =(props)=>{
     return (
-        <div className="rounded-xl bg-lightCream flex-1 p-8">
+        <div className="group rounded-xl bg-lightCream flex-1 p-8 h-min">
             <p className="text-2xl font-semibold pb-3">
-                Senior Full-stack Engineer
+                {props.role.title}
             </p>
             <ul role="list" className="flex flex-col gap-2 list-disc pl-4 text-lg">
-                <li>Full time position</li>
-                <li>Berlin or Remote</li>
-                <li>Heyy</li>
+                {props.role.desc.map((des, index) => (
+                    <li key = {index}>{des}</li>
+                ))}
             </ul>
+            <div className="group-hover:flex pt-8 hidden justify-center">
+                <MainButton text = "Apply Now"/>
+            </div>
         </div>
     )
 }
