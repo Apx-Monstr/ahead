@@ -11,7 +11,6 @@ const Meet = ()=>{
                 <div className="h-96 bg-lightRed absolute bottom-16 -left-32 aspect-square rounded-full -z-10"></div>
                 <img src={leaf.src} alt="" className="absolute top-32 right-32 -rotate-12"/>
                 <img src={leaf.src} alt="" className="absolute bottom-64 left-1/3 -rotate-12"/>
-                <img src={ripple.src} alt="" className="absolute bottom-48 left-1/3 -rotate-12"/>
                 <div className="my-24 z-10">
                     <div className="text-2xl px-8">
                         Built out of Frustation 

@@ -1,7 +1,8 @@
 "use client"
-
+import { motion } from "framer-motion";
 import Card from "./root/Card";
 import redGhost from "/public/redGhost.svg"
+import img from "react-dom"
 import React, { useState } from "react";
 const quotes=[
     {
@@ -44,9 +45,23 @@ const quotes=[
 const Quotes = () =>{
     return (
         <div className=" py-12">
-            <div className="text-6xl font-semibold px-16 pb-16 relative w-fit">
-                Does this sound familiar...
-                <img src = {redGhost.src} className="absolute top-0 -right-4 -rotate-6 h-16"/>
+            <div className="relative w-fit">
+                <motion.p 
+                variants={{onScreen:{opacity:1, scale:1}, offScreen:{opacity:0, scale:0}}} 
+                initial="offScreen" whileInView="onScreen" 
+                viewport={{once:true}} 
+                transition={{duration:0.5}} 
+                className="text-6xl font-semibold px-16 pb-16">
+                    Does this sound familiar...
+                </motion.p>
+                <motion.img initial={{ x: "100%", pathLength: 0 }}
+      animate={{ x: 0, pathLength: 1 }}
+      transition={{ duration: 0.75 }}
+      path={{
+        d: "M100 0 L0 0",
+        type: "cubic-bezier",
+        points: [0, 0, 0.5, 1, 1, 1],
+      }} src = {redGhost.src} className="absolute top-0 -right-4 -rotate-6 h-16 animate-bounce"/>
             </div>
             <div className="overflow-auto flex items-center px-16 gap-12 py-12 relative" >
                 {quotes.map((quote, index) => (

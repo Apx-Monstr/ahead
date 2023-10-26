@@ -1,3 +1,5 @@
+"use client"
+
 import fonts from "@/app/fonts";
 import downloadApp from "/public/DownloadApp.svg";
 import roundCircle from "/public/Circle.png";
@@ -5,6 +7,7 @@ import phone from "/public/Phone.png"
 import leaf from "/public/leaf.svg"
 import ripple from "/public/Ripple.svg"
 import Flower from "/public/Flower.svg"
+import { motion } from "framer-motion";
 const Hero = (props) =>{
     return (
         <div className="bg-white p-12 pt-4">
@@ -14,13 +17,13 @@ const Hero = (props) =>{
                 <img src = {ripple.src} className="absolute -bottom-16 left-64 h-28" alt="leaf image"/>
                 <img src = {ripple.src} className="absolute top-36 left-1/2 h-12" alt="leaf image"/>
                 <div className="flex flex-col flex-1 justify-center p-12 ">
-                    <p className="text-lg leading-loose">
+                    <motion.p initial={{transformOrigin:"top",opacity:0, translateY:-10}} animate={{opacity:1,translateY:0}} transition={{duration:1.5,}} className="text-lg leading-loose">
                         Ahead app
-                    </p>
-                    <div className={"text-7xl " + fonts.outfitSemi.className}>
+                    </motion.p>
+                    <motion.div initial={{ translateX:-100,transformOrigin: "left", opacity:0 }} animate={{ translateX:0,opacity:1 }} transition={{ duration: .75 }} className={"text-7xl " + fonts.outfitSemi.className}>
                         Master your Life <br />by mastering <br />emotions
-                    </div>
-                    <div className="flex gap-8 py-8 items-center">
+                    </motion.div>
+                    <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1.25}} className="flex gap-8 py-8 items-center">
                         <img className="h-12 self-start cursor-pointer" src = {downloadApp.src}/>
                         <div className="text-sm">
                             <div className="flex gap-1 pb-1">
@@ -42,13 +45,13 @@ const Hero = (props) =>{
                             </div>
                             100+ AppStore Reviews
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
                 <div className="flex-1 relative flex items-center justify-center">
-                    <img src = {roundCircle.src} className="z-10"/>
-                    <div className="h-80 aspect-square rounded-full absolute self-center bg-primary opacity-40 drop-shadow-xl">
-                    </div>
-                    <img src={phone.src} alt="phone screen" srcset="" className="absolute self-center drop-shadow-md"/>
+                    <motion.img initial={{ opacity: 0, rotate: 0 }} animate={{ opacity: 1, rotate: 360 }} transition={{ duration: .75 }} src = {roundCircle.src} className="z-10"/>
+                    <motion.div initial={{ scale: 0 }} animate={{ rotate: 360, scale: 1 }} transition={{duration:.75}} className="h-80 aspect-square rounded-full absolute self-center bg-primary opacity-40 drop-shadow-xl">
+                    </motion.div>
+                    <motion.img initial={{ scale: 0 }} animate={{ rotate: 360, scale: 1 }} transition={{ type: "spring",stiffness: 260,damping: 20, duration:2.5}} src={phone.src} alt="phone screen" srcset="" className="absolute self-center drop-shadow-md"/>
                 </div>
             </div>
         </div>
