@@ -1,3 +1,5 @@
+"use client"
+import { motion } from "framer-motion";
 import fonts from "@/app/fonts";
 import ScrollCards from "./root/ScrollCards";
 import HeroGhost from "/public/ghostHero.png";
@@ -27,30 +29,49 @@ const Work = () =>{
     return (
         <div className=" p-12">
             <div className=" h-auto max-h-fit rounded-3xl bg-lightPurple p-12">
-                <div className={"flex justify-between text-7xl py-16 " + fonts.outfitSemi.className}>
-                    Work with Us
-                    <p className="text-primary">
+                <div className={"flex justify-between py-16 " + fonts.outfitSemi.className}>
+                    <motion.p variants={{onScreen:{opacity:1, scale:1, transformOrigin:"left",}, offScreen:{opacity:0, scale:0,}}} 
+                    initial="offScreen" whileInView="onScreen" 
+                    viewport={{once:true}} 
+                    transition={{duration:1.5, type:"spring",}} className="text-7xl">
+                        Work with Us
+                    </motion.p>
+                    <motion.p variants={{onScreen:{opacity:1, scale:1, transformOrigin:"right",}, offScreen:{opacity:0, scale:0,}}} 
+                    initial="offScreen" whileInView="onScreen" 
+                    viewport={{once:true}} 
+                    transition={{duration:1.5, type:"spring",}} className="text-primary text-7xl">
                         ahead
-                    </p>
+                    </motion.p>
                 </div>
                 <div className="flex gap-16">
                     <div className="flex-1">
                         <div className="rounded-lg bg-white shadow-xl text-2xl leading-relaxed">
                             <div className="pt-12 px-12">
-                                <img className="h-16 drop-shadow-xl" src = {HeroGhost.src}/>
+                                <motion.img variants={{onScreen:{opacity:1, scale:1, transformOrigin:"top center",rotate:-15}, offScreen:{opacity:0, scale:0,rotate:30}}} 
+                                initial="offScreen" whileInView="onScreen" 
+                                viewport={{once:true}} 
+                                transition={{duration:1.5, type:"spring",stiffness:100}} 
+                                className="h-16 drop-shadow-xl" 
+                                src = {HeroGhost.src}/>
                             </div>
-                            <div className="p-12 pt-6">
+                            <motion.div variants={{onScreen:{opacity:1, transformOrigin:"left",}, offScreen:{opacity:0,}}} 
+                            initial="offScreen" whileInView="onScreen" 
+                            viewport={{once:true}} 
+                            transition={{duration:1.5, type:"spring",}}  className="p-12 pt-6">
                                 <p className="text-4xl font-semibold pb-6">
                                     About
                                 </p>
                                 At Ahead our goal is to make self-improvement fun and lasting. We know there is a way how to make it work. And that`s what aHead is all about!
-                            </div>
-                            <div className="p-12 bg-lightCream rounded-lg leading-relaxed">
+                            </motion.div>
+                            <motion.div variants={{onScreen:{opacity:1, transformOrigin:"left",}, offScreen:{opacity:0,}}} 
+                            initial="offScreen" whileInView="onScreen" 
+                            viewport={{once:true}} 
+                            transition={{duration:1.5, type:"spring",}} className="p-12 bg-lightCream rounded-lg leading-relaxed">
                                 <p className="text-4xl font-semibold pb-6">
                                     Product
                                 </p>
                                 Sure you could spend ages reading books or sitting in seminars on how to become a better spouse, parent, or manager - like we did...
-                            </div>
+                            </motion.div>
                         </div>
                     </div>
                     <div className="flex-1  max-h-full overflow-auto relative">

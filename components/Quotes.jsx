@@ -47,27 +47,25 @@ const Quotes = () =>{
         <div className=" py-12">
             <div className="relative w-fit">
                 <motion.p 
-                variants={{onScreen:{opacity:1, scale:1}, offScreen:{opacity:0, scale:0}}} 
+                variants={{onScreen:{opacity:1, scale:1, transformOrigin:"left",}, offScreen:{opacity:0, scale:0,}}} 
                 initial="offScreen" whileInView="onScreen" 
                 viewport={{once:true}} 
-                transition={{duration:0.5}} 
+                transition={{duration:1.25, type:"spring"}} 
                 className="text-6xl font-semibold px-16 pb-16">
                     Does this sound familiar...
                 </motion.p>
-                <motion.img initial={{ x: "100%", pathLength: 0 }}
-      animate={{ x: 0, pathLength: 1 }}
-      transition={{ duration: 0.75 }}
-      path={{
-        d: "M100 0 L0 0",
-        type: "cubic-bezier",
-        points: [0, 0, 0.5, 1, 1, 1],
-      }} src = {redGhost.src} className="absolute top-0 -right-4 -rotate-6 h-16 animate-bounce"/>
+                <img src={redGhost.src} className="absolute top-0 -right-4 -rotate-6 h-16 animate-bounce"/>
             </div>
-            <div className="overflow-auto flex items-center px-16 gap-12 py-12 relative" >
+            <motion.div 
+            variants={{onScreen:{opacity:1, scale:1, transformOrigin:"right",}, offScreen:{opacity:0, scale:0,}}} 
+            initial="offScreen" whileInView="onScreen" 
+            viewport={{once:true}} 
+            transition={{duration:0.75, type:"spring",}} 
+            className="overflow-auto flex items-center px-16 gap-12 py-12 relative" >
                 {quotes.map((quote, index) => (
                     <Card key={index} classes={quote.classes} emoji={quote.emoji} title={quote.title} desc={quote.desc} />
                 ))}
-            </div>
+            </motion.div>
         </div>
     )
 }

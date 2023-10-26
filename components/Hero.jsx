@@ -1,5 +1,4 @@
 "use client"
-
 import fonts from "@/app/fonts";
 import downloadApp from "/public/DownloadApp.svg";
 import roundCircle from "/public/Circle.png";
@@ -17,13 +16,28 @@ const Hero = (props) =>{
                 <img src = {ripple.src} className="absolute -bottom-16 left-64 h-28" alt="leaf image"/>
                 <img src = {ripple.src} className="absolute top-36 left-1/2 h-12" alt="leaf image"/>
                 <div className="flex flex-col flex-1 justify-center p-12 ">
-                    <motion.p initial={{transformOrigin:"top",opacity:0, translateY:-10}} animate={{opacity:1,translateY:0}} transition={{duration:1.5,}} className="text-lg leading-loose">
+                    <motion.p 
+                    variants={{onScreen:{opacity:1,translateY:0, transformOrigin:"top",}, offScreen:{opacity:0, translateY:-10}}} 
+                    initial="offScreen" whileInView="onScreen" 
+                    viewport={{once:true}} 
+                    transition={{duration:1.5, type:"spring",}}
+                    className="text-lg leading-loose">
                         Ahead app
                     </motion.p>
-                    <motion.div initial={{ translateX:-100,transformOrigin: "left", opacity:0 }} animate={{ translateX:0,opacity:1 }} transition={{ duration: .75 }} className={"text-7xl " + fonts.outfitSemi.className}>
+                    <motion.div 
+                    variants={{onScreen:{opacity:1, translateX:0, transformOrigin:"left",}, offScreen:{opacity:0, translateX:-100,}}} 
+                    initial="offScreen" whileInView="onScreen" 
+                    viewport={{once:true}} 
+                    transition={{duration:1.5, type:"spring",}}
+                    className={"text-7xl " + fonts.outfitSemi.className}>
                         Master your Life <br />by mastering <br />emotions
                     </motion.div>
-                    <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1.25}} className="flex gap-8 py-8 items-center">
+                    <motion.div 
+                    variants={{onScreen:{opacity:1, transformOrigin:"right",}, offScreen:{opacity:0,}}} 
+                    initial="offScreen" whileInView="onScreen" 
+                    viewport={{once:true}} 
+                    transition={{duration:1.5, type:"spring",}}
+                    className="flex gap-8 py-8 items-center">
                         <img className="h-12 self-start cursor-pointer" src = {downloadApp.src}/>
                         <div className="text-sm">
                             <div className="flex gap-1 pb-1">
@@ -48,10 +62,24 @@ const Hero = (props) =>{
                     </motion.div>
                 </div>
                 <div className="flex-1 relative flex items-center justify-center">
-                    <motion.img initial={{ opacity: 0, rotate: 0 }} animate={{ opacity: 1, rotate: 360 }} transition={{ duration: .75 }} src = {roundCircle.src} className="z-10"/>
-                    <motion.div initial={{ scale: 0 }} animate={{ rotate: 360, scale: 1 }} transition={{duration:.75}} className="h-80 aspect-square rounded-full absolute self-center bg-primary opacity-40 drop-shadow-xl">
+                    <motion.img variants={{onScreen:{opacity:1, rotate:360,}, offScreen:{opacity:0,rotate:0}}} 
+                    initial="offScreen" whileInView="onScreen" 
+                    viewport={{once:true}} 
+                    transition={{duration:1.5, type:"spring",}}
+                    src = {roundCircle.src} 
+                    className="z-10"/>
+                    <motion.div variants={{onScreen:{rotate:360, scale:1}, offScreen:{scale:0,}}} 
+                    initial="offScreen" whileInView="onScreen" 
+                    viewport={{once:true}} 
+                    transition={{duration:1.5, type:"spring",}}
+                    className="h-80 aspect-square rounded-full absolute self-center bg-primary opacity-40 drop-shadow-xl">
                     </motion.div>
-                    <motion.img initial={{ scale: 0 }} animate={{ rotate: 360, scale: 1 }} transition={{ type: "spring",stiffness: 260,damping: 20, duration:2.5}} src={phone.src} alt="phone screen" srcset="" className="absolute self-center drop-shadow-md"/>
+                    <motion.img variants={{onScreen:{scale:1, rotate:360}, offScreen:{ scale:0,}}} 
+                    initial="offScreen" whileInView="onScreen" 
+                    viewport={{once:true}} 
+                    transition={{ type: "spring",stiffness: 260,damping: 20, duration:4.5}} 
+                    src={phone.src} alt="phone screen" srcset="" 
+                    className="absolute self-center drop-shadow-md"/>
                 </div>
             </div>
         </div>

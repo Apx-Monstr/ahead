@@ -1,4 +1,7 @@
+"use client"
+
 import sunflower from "/public/sunflower.svg"
+import { motion } from "framer-motion";
 const Rate = ()=>{
     return (
         <div className="bg-white p-12">
@@ -18,7 +21,12 @@ const Rate = ()=>{
                             </p>
                             <img src={sunflower.src} alt="" className="h-full w-full absolute top-0 left-0"/>
                         </div>
-                        Answer questions on your social skills
+                        <motion.p variants={{onScreen:{opacity:1, scale:1, transformOrigin:"top",}, offScreen:{opacity:0, scale:0,}}} 
+                        initial="offScreen" whileInView="onScreen" 
+                        viewport={{once:true}} 
+                        transition={{duration:1.5, type:"spring",}}>
+                            Answer questions on your social skills
+                        </motion.p>
                     </div>
                     <div className="flex-1 text-center px-4 relative pt-8">
                         <div className="border-t-4 left-0 -top-1 w-full border-dashed border-Brown absolute"></div>
@@ -28,7 +36,12 @@ const Rate = ()=>{
                             </p>
                             <img src={sunflower.src} alt="" className="h-full w-full absolute top-0 left-0"/>
                         </div>
-                        Let others anonymously answer the same questions about you
+                        <motion.p variants={{onScreen:{opacity:1, scale:1, transformOrigin:"top",}, offScreen:{opacity:0, scale:0,}}} 
+                        initial="offScreen" whileInView="onScreen" 
+                        viewport={{once:true}} 
+                        transition={{duration:1.5, type:"spring",}}>
+                            Let others anonymously answer the same questions about you
+                        </motion.p>
                     </div>
                     <div className="flex-1 text-center px-4 relative pt-8">
                         <div className="border-t-4 right-1/2 -top-1 w-1/2 border-dashed border-Brown absolute"></div>
@@ -38,37 +51,62 @@ const Rate = ()=>{
                             </p>
                             <img src={sunflower.src} alt="" className="h-full w-full absolute top-0 left-0"/>
                         </div>
-                        Find out where you and others see things the same way - and where not!
+                        <motion.p variants={{onScreen:{opacity:1, scale:1, transformOrigin:"top",}, offScreen:{opacity:0, scale:0,}}} 
+                        initial="offScreen" whileInView="onScreen" 
+                        viewport={{once:true}} 
+                        transition={{duration:1.5, type:"spring",}}>
+                            Find out where you and others see things the same way - and where not!
+                        </motion.p>
                     </div>
                 </div>
                 <div className="w-[900px] h-[300px] bg-white rounded-2xl shadow-2xl p-8 flex items-center">
                     <div className="h-0.5 w-full bg-gray-200 flex items-center">
                         <div className="flex-1">
                             <div className="bg-primary h-5 w-5 rounded-full relative">
-                                <div className="bg-primary text-base rounded-lg h-auto px-4 py-2 absolute right-0 bottom-full my-2 text-white">
+                                <motion.div 
+                                variants={{onScreen:{opacity:1, scale:1, transformOrigin:"top bottom",rotate:0}, offScreen:{opacity:0, scale:0,rotate:15}}} 
+                                initial="offScreen" whileInView="onScreen" 
+                                viewport={{once:true}} 
+                                transition={{duration:1.5, type:"spring",stiffness:150}}
+                                className="bg-primary text-base rounded-lg h-auto px-4 py-2 absolute right-0 bottom-full my-2 text-white">
                                     You
-                                </div>
+                                </motion.div>
                             </div>
                         </div>
                         <div className="flex-1 flex justify-center">
                             <div className="bg-skyBlue h-5 w-5 rounded-full relative">
-                                <div className="bg-skyBlue text-base rounded-lg h-auto px-4 py-2 absolute top-full my-2 text-white">
+                                <motion.div 
+                                variants={{onScreen:{opacity:1, scale:1, transformOrigin:"top left",rotate:0}, offScreen:{opacity:0, scale:0,rotate:15}}} 
+                                initial="offScreen" whileInView="onScreen" 
+                                viewport={{once:true}} 
+                                transition={{duration:1.5, type:"spring",stiffness:150}}
+                                className="bg-skyBlue text-base rounded-lg h-auto px-4 py-2 absolute top-full my-2 text-white">
                                     Anonymous&nbsp;1
-                                </div>
+                                </motion.div>
                             </div>
                         </div>
                         <div className="flex-1 flex justify-center">
                             <div className="bg-Yellow h-5 w-5 rounded-full relative">
-                                <div className="bg-Yellow text-base rounded-lg h-auto px-4 py-2 absolute bottom-full my-2 text-white">
+                                <motion.div 
+                                variants={{onScreen:{opacity:1, scale:1, transformOrigin:"left bottom",rotate:0}, offScreen:{opacity:0, scale:0,rotate:15}}} 
+                                initial="offScreen" whileInView="onScreen" 
+                                viewport={{once:true}} 
+                                transition={{duration:1.5, type:"spring",stiffness:150}}
+                                className="bg-Yellow text-base rounded-lg h-auto px-4 py-2 absolute bottom-full my-2 text-white">
                                     Anonymous&nbsp;2
-                                </div>
+                                </motion.div>
                             </div>
                         </div>
                         <div className="flex-1 flex justify-end">
                             <div className="bg-Green h-5 w-5 rounded-full relative">
-                                <div className="bg-Green text-base rounded-lg h-auto px-4 py-2 absolute top-full my-2 text-white">
+                                <motion.div 
+                                variants={{onScreen:{opacity:1, scale:1, transformOrigin:"top left", rotate:0}, offScreen:{opacity:0, scale:0,rotate:15}}} 
+                                initial="offScreen" whileInView="onScreen" 
+                                viewport={{once:true}} 
+                                transition={{duration:1.5, type:"spring",stiffness:150}}
+                                className="bg-Green text-base rounded-lg h-auto px-4 py-2 absolute top-full my-2 text-white">
                                     Anonymous&nbsp;3
-                                </div>
+                                </motion.div>
                             </div>
                         </div>
                     </div>
