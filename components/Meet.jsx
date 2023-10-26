@@ -80,7 +80,7 @@ const Meet = ()=>{
                         initial="offScreen" whileInView="onScreen" 
                         viewport={{once:true}} 
                         transition={{duration:1.5, type:"spring"}}
-                        className=" flex-1 text-3xl p-12">
+                        className=" flex-1 text-3xl p-12 text-gray-500">
                             A personalised pocket coach that provides bite-sized, science driven tools to boost emotional intelligence.
                             <br /><br />Think of it as a pocket cheerleader towards a better, more fulfilling.
                         </motion.div>
