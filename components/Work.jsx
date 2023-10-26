@@ -14,6 +14,14 @@ const cards = [
         title:"Play and grow together with others on the same journey",
         desc:"Ahead feels like a game, not like a chore. See yourself grow every day towards achieving your goals!"
     },
+    {
+        title:"Master how to make it happen in real life",
+        desc:"We support you towards ninja-level skills with sleek tools such as dry-runs, quizzes, and flashcards."
+    },
+    {
+        title:"Learn about practical skills that you can actually use in real life",
+        desc:"We teach you smart psychological techniques and habit-forming strategies that are easy to apply."
+    },
 ]
 const Work = () =>{
     return (

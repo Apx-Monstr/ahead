@@ -2,10 +2,17 @@ import fonts from "@/app/fonts";
 import downloadApp from "/public/DownloadApp.svg";
 import roundCircle from "/public/Circle.png";
 import phone from "/public/Phone.png"
+import leaf from "/public/leaf.svg"
+import ripple from "/public/Ripple.svg"
+import Flower from "/public/Flower.svg"
 const Hero = (props) =>{
     return (
         <div className="bg-white p-12 pt-4">
-            <div className="w-full h-screen max-h-[1080px] rounded-3xl bg-lightPurple flex">
+            <div className="w-full h-screen max-h-[1080px] rounded-3xl bg-lightPurple flex relative overflow-hidden">
+                <img src = {leaf.src} className="absolute -top-4 left-16 h-16 -rotate-12" alt="leaf image"/>
+                <img src = {ripple.src} className="absolute -top-4 right-32 h-12" alt="leaf image"/>
+                <img src = {ripple.src} className="absolute -bottom-16 left-64 h-28" alt="leaf image"/>
+                <img src = {ripple.src} className="absolute top-36 left-1/2 h-12" alt="leaf image"/>
                 <div className="flex flex-col flex-1 justify-center p-12 ">
                     <p className="text-lg leading-loose">
                         Ahead app

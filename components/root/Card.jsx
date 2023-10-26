@@ -1,14 +1,15 @@
-const Card = () =>{
+const Card = (props) =>{
     return (
-        <div className="bg-primary min-w-[410px] rounded-xl p-12 -rotate-12">
+        <div className={" min-w-[410px] max-h-fit max-w-min rounded-xl p-12 " + (props.classes)}>
             <p className="text-3xl p-0">
-                &#128512;
+                {props.emoji}
+                {/* &#128512; */}
             </p>
-            <p className="font-medium text-lg py-2 text-white">
-                You get a promotion at work
+            <p className="font-medium text-lg py-2">
+                {props.title}
             </p>
-            <p className="text-white opacity-80">
-                You Question yourself and wonder when they`ll realise you are an unqualified imposter, instead of trusting yourself and your abilities
+            <p className="opacity-80">
+                {props.desc}
             </p>
         </div>
     )

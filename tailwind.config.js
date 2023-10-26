@@ -20,7 +20,8 @@ module.exports = {
         Green:"#58c896",
         Yellow:"#fdb338",
         lightCream:"#FEF7F1",
-        Brown:"#D58E4C"
+        Brown:"#D58E4C",
+        lightRed:"#FAE8DC"
       }
     },
   },

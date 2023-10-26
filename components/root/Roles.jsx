@@ -11,8 +11,8 @@ const Roles =(props)=>{
                     <li key = {index}>{des}</li>
                 ))}
             </ul>
-            <div className="group-hover:flex pt-8 hidden justify-center">
-                <MainButton text = "Apply Now"/>
+            <div className="group-hover:block pt-8 hidden">
+                <MainButton text = "See Details"/>
             </div>
         </div>
     )
