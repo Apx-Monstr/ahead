@@ -1,9 +1,12 @@
+import blueGhost from "/public/blueGhost.svg"
+
 const SelfImprove = ()=>{
     return (
         <div className="bg-white p-24 text-2xl">
             Wrong with self imporovement and how we are fixing it
-            <p className="text-7xl font-semibold leading-loose pb-16">
-                Self Improvement. Ugh.
+            <p className="text-7xl font-semibold leading-loose pb-16 relative w-fit">
+                Self Improvement. Ugh...
+                <img src = {blueGhost.src} className="absolute top-8 -right-16 rotate-12 h-16"/>
             </p>
             <div className="w-full relative">
                 <div className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-t from-[#fffffffb] via-[#ffffffc9] to-transparent z-30"></div>

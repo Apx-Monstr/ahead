@@ -1,5 +1,5 @@
 import miniGhost from "/public/minighost.png"
-
+import sunflower from "/public/sunflower.svg"
 const Meet = ()=>{
     return (
         <div className="bg-white p-12 z-10">
@@ -14,7 +14,13 @@ const Meet = ()=>{
                     </div>
                     <div className="flex gap-8 py-16">
                         <div className="flex-1  flex items-center justify-center">
-                            <div className="bg-white aspect-square rounded-full h-72 flex items-center justify-center border-[16px] border-gray-100">
+                            <div className="bg-white aspect-square rounded-full h-72 flex items-center justify-center border-[16px] border-gray-100 relative">
+                                <div className=" w-16 h-16 left-[calc(50%-2rem)] -top-8 absolute flex items-center justify-center ">
+                                    <p className="z-10 text-white">
+                                        1
+                                    </p>
+                                    <img src={sunflower.src} alt="" className="h-full w-full absolute top-0 left-0"/>
+                                </div>
                                 <img src = {miniGhost.src} className="h-36"/>
                             </div>
                         </div>
