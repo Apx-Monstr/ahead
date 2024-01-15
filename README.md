@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+"Ahead App Redesign Concept", a desktop website project crafted using Next.js, React.js and the Framer Motion animation library. Drawing inspiration from the captivating design showcased on [Dribbble](https://dribbble.com/shots/19807069-Ahead-app-redesign-concept) by [Taras Migulko](https://dribbble.com/ui_migulko), in the process I utilized Next.js, a robust React framework, to ensure a seamless user experience with features like server-side rendering, To breathe life into the design, I leveraged the capabilities of Framer Motion, and for deployment, I chose Vercel as the hosting platform to ensure a reliable and efficient user experience.
+
+Live Deployment : [Ahead Application](https://aheadfrontend.vercel.app)
 
 ## Getting Started
 
