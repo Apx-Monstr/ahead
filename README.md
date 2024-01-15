@@ -1,8 +1,13 @@
-"Ahead App Redesign Concept", a desktop website project crafted using Next.js, React.js and the Framer Motion animation library. Drawing inspiration from the captivating design showcased on [Dribbble](https://dribbble.com/shots/19807069-Ahead-app-redesign-concept) by [Taras Migulko](https://dribbble.com/ui_migulko), in the process I utilized Next.js, a robust React framework, to ensure a seamless user experience with features like server-side rendering, To breathe life into the design, I leveraged the capabilities of Framer Motion, and for deployment, I chose Vercel as the hosting platform to ensure a reliable and efficient user experience.
+# "Ahead App Redesign Concept" 🔥
+A desktop website project crafted using Next.js, React.js and the Framer Motion animation library. Drawing inspiration from the captivating design showcased on [Dribbble](https://dribbble.com/shots/19807069-Ahead-app-redesign-concept) by [Taras Migulko](https://dribbble.com/ui_migulko), in the process I utilized Next.js, a robust React framework, to ensure a seamless user experience with features like server-side rendering, To breathe life into the design, I leveraged the capabilities of Framer Motion, and for deployment, I chose Vercel as the hosting platform to ensure a reliable and efficient user experience.
 
-Live Deployment : [Ahead Application](https://aheadfrontend.vercel.app)
+## Live Deployment ✅: 
+[Ahead Application](https://aheadfrontend.vercel.app)
 
-## Getting Started
+## Screenshot
+![aheadappss](https://github.com/Apx-Monstr/ahead/assets/106424104/2825473d-3d55-4a61-b043-70e06050c13f)
+
+## Getting Started ⬆️
 
 First, run the development server:
 
@@ -21,18 +26,3 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
